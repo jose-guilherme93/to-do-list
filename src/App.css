@@ -1,8 +1,17 @@
 .container {
   max-width: 500px;
   margin: 30px auto;
+  padding: 30px;
   overflow: auto;
   min-height: 300px;
-  border: 2px solid chartreuse;
+  border: 2px solid rgb(31, 63, 116);
   border-radius: 10px;
+}
+p {
+  color: aliceblue;
+  text-transform: capitalize;
+  text-align: center;
+  
+  
+  
 }
