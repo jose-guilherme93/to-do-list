@@ -7,12 +7,20 @@ const AddTask = ({handleTaskAddtion}) => {
 
     const handleInputChange = (e) => {
         setInputData(e.target.value)
-       
 
     }
     const handleAddTaskClick = () => {
-        handleTaskAddtion(inputData)
-        setInputData('')
+        // if (inputData)
+        // {
+        //    alert('Tarefa vazia!')
+        // }
+
+        if (inputData) {
+           
+            handleTaskAddtion(inputData)
+            setInputData('')
+            
+        }
     }
     return ( 
         <div className="add-task-container">

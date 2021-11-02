@@ -4,6 +4,7 @@ import {v4 as uuidv4} from 'uuid'
 import Tasks from './components/Tasks';
 import './App.css'
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer"
 
 
 const App = () => {
@@ -17,9 +18,10 @@ const App = () => {
     {
       id: '2',
       title: 'ler livro',
-      completed: true,
+      completed: false,
     }
   ])
+    
 
     const handleTaskClick = (taskId) => {
       const newTasks = tasks.map(task => {
@@ -42,13 +44,27 @@ const App = () => {
       ]
       setTasks(newTasks)
     }
+
+    const handleTaskDeletion = (taskId) => {
+        const newTasks = tasks.filter(task => task.id !== taskId)
+        setTasks(newTasks)
+    }
  
     return (
       <>
         <div className="container" >
           <AddTask handleTaskAddtion={handleTaskAddtion} />
-          <Tasks tasks={tasks} handleTaskClick={handleTaskClick} />
-        </div>     
+          
+          <Tasks tasks={tasks} 
+          handleTaskClick={handleTaskClick}
+          handleTaskDeletion={handleTaskDeletion} />
+
+            <div className="footer">
+              <Footer/>
+            </div>
+        </div>
+          
+        
       </>
       );
 };

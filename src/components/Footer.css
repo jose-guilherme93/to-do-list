@@ -1,0 +1,11 @@
+
+.button {
+    
+    font-size: large;
+    border: none;
+    outline: none;
+    border-radius: 4px ;
+}
+.button {
+    transition: margin-left 1s  1s;
+}

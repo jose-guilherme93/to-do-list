@@ -1,7 +1,7 @@
 .container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 30px auto;
-  padding: 30px;
+  padding: 2rem;
   overflow: auto;
   min-height: 300px;
   border: 2px solid rgb(31, 63, 116);
