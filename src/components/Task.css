@@ -20,15 +20,20 @@
     margin-right: .2rem;
     cursor: pointer;
     border: none;
+    padding: 0;
     font-size: 16px;
     color: rgb(70, 126, 216);
     background-color: #444;
+    place-items: center;
+    height: 100%;
 }
 
 .info-task-button {
-    margin-right: .2rem;
+    margin-right: .4rem;
     border: none;
     background-color: #444;
     color: rgb(70, 126, 216);
     cursor: pointer;
+    font-size: 16px;
+    padding: 0;
 }

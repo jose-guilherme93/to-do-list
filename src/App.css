@@ -10,8 +10,9 @@
 p {
   color: aliceblue;
   text-transform: capitalize;
-  text-align: center;
-  
-  
-  
+  text-align: center; 
+}
+header {
+  font-size: 26px;
+  color: #eee;
 }

@@ -1,0 +1,17 @@
+.button-task-details {
+    width: 30%;
+    margin-top: 1rem;
+}
+
+.task-title-details {
+    color: #eee;
+    margin-left: 1rem;
+}
+
+.task-details-paragraph {
+    width: 100%;
+    background-color: #444;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 1rem;
+}
