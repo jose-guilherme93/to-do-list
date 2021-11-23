@@ -5,7 +5,7 @@ import './App.css'
 
 import Tasks from './components/Tasks';
 import AddTask from "./components/AddTask";
-import Footer from "./components/Footer"
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import TaskDetails from "./components/TaskDetails";
 
@@ -28,7 +28,6 @@ const App = () => {
   )
     
     // const handleLocalStorage = React.useEffect = () => {localStorage.setItem('tasks')}
-    localStorage.setItem('nome' , 'on')
     const handleTaskClick = (taskId) => {
       const newTasks = tasks.map(task => {
         if (task.id === taskId) return {...task, completed: !task.completed}
@@ -55,6 +54,8 @@ const App = () => {
         const newTasks = tasks.filter(task => task.id !== taskId)
         setTasks(newTasks)
     }
+    localStorage.setItem('taskTitle', 'id')
+
  
     return (
       <Router>
@@ -68,9 +69,7 @@ const App = () => {
                   handleTaskClick={handleTaskClick}
                   handleTaskDeletion={handleTaskDeletion} />
 
-                  <div className="footer">
-                    <Footer/>
-                  </div>
+                  
                     </>  
                 )}/>
                 <Route path="/:taskTitle" exact component={TaskDetails}/>
