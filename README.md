@@ -1,8 +1,8 @@
 # An to-do-list web application!
-## You can add a task or remove, add a title on it and visualize it in your 'own page'
+
 ### it is a training about learn React fast, and I study everyday for know more about it.
 
-Getting Started with Create React App
+You can add a task or remove, add a title on it and visualize it in your 'own page'
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
