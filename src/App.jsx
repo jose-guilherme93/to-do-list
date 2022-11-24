@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {v4 as uuidv4} from 'uuid'
 
 import './App.css'
@@ -13,21 +13,11 @@ import TaskDetails from "./components/TaskDetails";
 const App = () => {
   const [tasks, setTasks] = useState (localStorage.getItem('tasks') ||
     [
-    {
-      id: '1',
-      title: 'Estudar Programação',
-      completed: false,
-
-    },
-    {
-      id: '2',
-      title: 'ler livro',
-      completed: false,
-    }
+    
   ]
   )
     
-    // const handleLocalStorage = React.useEffect = () => {localStorage.setItem('tasks')}
+    
     const handleTaskClick = (taskId) => {
       const newTasks = tasks.map(task => {
         if (task.id === taskId) return {...task, completed: !task.completed}
