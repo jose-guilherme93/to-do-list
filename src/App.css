@@ -1,9 +1,9 @@
 .container {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 2rem;
+  max-width: 25rem;
+  margin: 1.875rem auto;
+  padding: 1rem;
   overflow: auto;
-  min-height: 300px;
+  min-height: 16.75rem;
   border: 2px solid rgb(31, 63, 116);
   border-radius: 10px;
 }
